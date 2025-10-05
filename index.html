@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎓 CS6.302 SSD - Software System Development</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Floating Background Elements -->
+    <div class="floating-bg">
+        <div class="floating-circle circle-1"></div>
+        <div class="floating-circle circle-2"></div>
+        <div class="floating-circle circle-3"></div>
+        <div class="floating-circle circle-4"></div>
+        <div class="floating-circle circle-5"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="modern-nav">
+        <div class="nav-wrapper">
+            <div class="nav-brand">
+                <div class="brand-icon">🚀</div>
+                <span class="brand-text">CS6.302 SSD</span>
+            </div>
+
+            <!-- Desktop Navigation -->
+            <div class="nav-links-desktop">
+                <a href="#about" class="nav-link">📖 About</a>
+                <a href="#lecture" class="nav-link">🏫 Schedule</a>
+                <a href="#cpolicy" class="nav-link">📋 Policies</a>
+                <a href="#schedule" class="nav-link">📚 Lectures</a>
+                <a href="#lab" class="nav-link">💻 Labs</a>
+                <a href="#activity" class="nav-link">📝 Exams</a>
+                <a href="#staff" class="nav-link">👥 Staff</a>
+            </div>
+
+            <!-- Mobile menu button -->
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <span class="menu-line"></span>
+                <span class="menu-line"></span>
+                <span class="menu-line"></span>
+            </button>
+        </div>
+
+        <!-- Mobile Navigation -->
+        <div id="mobileMenu" class="mobile-nav hidden">
+            <a href="#about" class="mobile-nav-link">📖 About</a>
+            <a href="#lecture" class="mobile-nav-link">🏫 Schedule</a>
+            <a href="#cpolicy" class="mobile-nav-link">📋 Policies</a>
+            <a href="#schedule" class="mobile-nav-link">📚 Lectures</a>
+            <a href="#lab" class="mobile-nav-link">💻 Labs</a>
+            <a href="#activity" class="mobile-nav-link">📝 Exams</a>
+            <a href="#staff" class="mobile-nav-link">👥 Staff</a>
+        </div>
+    </nav>
+
+    <main class="main-wrapper">
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="hero-content">
+                <div class="hero-badge">🎯 Monsoon 2025</div>
+                <h1 class="hero-title">
+                    <span class="title-highlight">CS6.302</span>
+                    Software System Development
+                </h1>
+                <h2 class="hero-subtitle">Software Engineering Research Center, IIIT Hyderabad</h2>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">29</div>
+                        <div class="stat-label">Lectures</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">14</div>
+                        <div class="stat-label">Lab Sessions</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">100+</div>
+                        <div class="stat-label">Students</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="content-section">
+            <div class="section-container">
+                <div class="glass-card">
+                    <div class="card-header">
+                        <div class="section-icon">📖</div>
+                        <h2 class="section-title">About the Course</h2>
+                    </div>
+                    <div class="card-body">
+                        <div class="highlight-box">
+                            <div class="highlight-icon">🎯</div>
+                            <div class="highlight-content">
+                                <h3>Course Overview</h3>
+                                <p>A comprehensive graduate-level course covering modern software system development</p>
+                            </div>
+                        </div>
+                        
+                        <div class="content-grid">
+                            <div class="content-block">
+                                <h4>🔧 Technical Skills</h4>
+                                <p>Software System Development is a graduate-level course that equips students with a comprehensive understanding of the principles, tools, and practices involved in designing and building modern software systems. Emphasizing a systems-oriented perspective, the course explores foundational and contemporary topics including Operating Systems, Computer Networks, Software Engineering methodologies, and Database Systems (both relational and NoSQL).</p>
+                            </div>
+                            
+                            <div class="content-block">
+                                <h4>💼 Industry Tools</h4>
+                                <p>Students will gain practical experience with industry-relevant tools and technologies such as Bash scripting, SQL, NoSQL databases, HTML, CSS, JavaScript, front-end frameworks, RESTful APIs, Python, and Flask. The course focuses on building scalable, maintainable, and secure software systems while fostering an appreciation for system integration, version control, development workflows, and deployment strategies.</p>
+                            </div>
+                            
+                            <div class="content-block">
+                                <h4>🎓 Learning Outcomes</h4>
+                                <p>Designed for students with a fundamental background in programming, this course bridges theory and practice, preparing them to contribute effectively to complex software development projects in both research and industry settings.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Lecture Schedule Section -->
+        <section id="lecture" class="content-section">
+            <div class="section-container">
+                <div class="glass-card">
+                    <div class="card-header">
+                        <div class="section-icon">🏫</div>
+                        <h2 class="section-title">Lecture & Lab Schedule</h2>
+                    </div>
+                    <div class="card-body">
+                        <div class="schedule-grid">
+                            <div class="schedule-card lecture-card">
+                                <div class="schedule-icon">🏛️</div>
+                                <h3>Lectures</h3>
+                                <div class="schedule-details">
+                                    <div class="detail-item">
+                                        <span class="detail-icon">⏰</span>
+                                        <span>8:30 AM - 9:55 AM</span>
+                                    </div>
+                                    <div class="detail-item">
+                                        <span class="detail-icon">📅</span>
+                                        <span>Tuesdays & Fridays</span>
+                                    </div>
+                                    <div class="detail-item">
+                                        <span class="detail-icon">📍</span>
+                                        <span>Lecture Hall H-205</span>
+                                    </div>
+                                    <div class="detail-item">
+                                        <span class="detail-icon">📊</span>
+                                        <span>29 Classes Total</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="schedule-card lab-card">
+                                <div class="schedule-icon">💻</div>
+                                <h3>Lab Sessions</h3>
+                                <div class="schedule-details">
+                                    <div class="detail-item">
+                                        <span class="detail-icon">⏰</span>
+                                        <span>2:00 PM - 5:00 PM</span>
+                                    </div>
+                                    <div class="detail-item">
+                                        <span class="detail-icon">📅</span>
+                                        <span>Fridays</span>
+                                    </div>
+                                    <div class="detail-item">
+                                        <span class="detail-icon">📍</span>
+                                        <span>Lab Hall SH1</span>
+                                    </div>
+                                    <div class="detail-item">
+                                        <span class="detail-icon">📊</span>
+                                        <span>14 Sessions Total</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="office-hours-card">
+                            <div class="office-icon">🕐</div>
+                            <div class="office-content">
+                                <h3>Office Hours</h3>
+                                <p>No specific instructor office hours. Instructor is available 15 minutes before every class for queries. You can also reach out via email at <a href="mailto:saianirudh.karre@iiit.ac.in" class="email-link">saianirudh.karre@iiit.ac.in</a>. TA office hours are listed in the <a href="#staff" class="internal-link">staff section</a>.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Course Policy Section -->
+        <section id="cpolicy" class="content-section">
+            <div class="section-container">
+                <div class="glass-card">
+                    <div class="card-header">
+                        <div class="section-icon">📋</div>
+                        <h2 class="section-title">Course Policies</h2>
+                        <a href="#home" class="back-to-top">↑ Top</a>
+                    </div>
+                    <div class="card-body">
+                        <div class="policy-accordion">
+                            <div class="accordion-item">
+                                <button class="accordion-header" data-target="teaching-method">
+                                    <span class="accordion-icon">📚</span>
+                                    <span class="accordion-title">Teaching and Learning Methodology</span>
+                                    <span class="accordion-arrow">▶</span>
+                                </button>
+                                <div id="teaching-method" class="accordion-body">
+                                    <div class="accordion-content">
+                                        <p>This course is designed in such a manner to help learners get the essence of principles behind good software system development. Learners will be taught concepts by making them work on real-life problems. This will promote deeper engagement, deeper understanding and resembles the true career situation. Overall Course Notes can be found <a href="https://tinted-rumba-8c6.notion.site/CS6-302-Software-System-Development-670da706e9514d7f9d5b1bcf3c6a1005" target="_blank" rel="noopener noreferrer" class="external-link">here</a>.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <button class="accordion-header" data-target="honesty-policy">
+                                    <span class="accordion-icon">🤝</span>
+                                    <span class="accordion-title">Academic Honesty</span>
+                                    <span class="accordion-arrow">▶</span>
+                                </button>
+                                <div id="honesty-policy" class="accordion-body">
+                                    <div class="accordion-content">
+                                        <p>If A helps B in a Task X → B doesn't get opportunity to do task X, B doesn't learn the skill to do task X, B gets spoilt-dependent-unfit for jobs requiring skills of task X, You may think it is okay to do it only once and not repeat it, But when a task is done once it gets wired into the brain as being "okay" and unless there is a strong reason it will repeat. If you want to help, help to learn!</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <button class="accordion-header" data-target="plagiarism-policy">
+                                    <span class="accordion-icon">🚫</span>
+                                    <span class="accordion-title">Zero Tolerance on Plagiarism</span>
+                                    <span class="accordion-arrow">▶</span>
+                                </button>
+                                <div id="plagiarism-policy" class="accordion-body">
+                                    <div class="accordion-content">
+                                        <p>This course requires student to submit assignments, participate in in-class activities, give mid and final exams, work with groups on projects and so on. Any forms of cheating or plagiarism will result in a score of "0" for projects, assignments or exams. Egregious cases will result in a grade of "F" for the course.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <button class="accordion-header" data-target="attendance-policy">
+                                    <span class="accordion-icon">📅</span>
+                                    <span class="accordion-title">Attendance Policy</span>
+                                    <span class="accordion-arrow">▶</span>
+                                </button>
+                                <div id="attendance-policy" class="accordion-body">
+                                    <div class="accordion-content">
+                                        <p>You are expected to attend and participate in all lectures and lab sessions (graded or ungraded). However, if any quiz/activity is held during the lecture session that you are absent, you will be given a '0' for the same. There will be NO make up classes/quizzes/activities. These rules are not meant to be demeaning or penalizing. They are stated to establish a clear understanding of the course expectations for student participation and demeanor in the classroom. These rules are meant to help/motivate students to learn.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <button class="accordion-header" data-target="misc-instructions">
+                                    <span class="accordion-icon">💻</span>
+                                    <span class="accordion-title">Miscellaneous Instructions</span>
+                                    <span class="accordion-arrow">▶</span>
+                                </button>
+                                <div id="misc-instructions" class="accordion-body">
+                                    <div class="accordion-content">
+                                        <p>Given the subject is based on building software systems, ensure you have a laptop with decent configuration. Please make every effort to participate in the in-class discussions, interact with the instructor during class, interact with the TAs during the labs. You are expected to attend the class with your personal machine.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <button class="accordion-header" data-target="ai-tools">
+                                    <span class="accordion-icon">🤖</span>
+                                    <span class="accordion-title">Use of AI Tools</span>
+                                    <span class="accordion-arrow">▶</span>
+                                </button>
+                                <div id="ai-tools" class="accordion-body">
+                                    <div class="accordion-content">
+                                        <p>Students are free to use different AI tools like ChatGPT, Co-pilot, etc. for the course assignments/activities. However, please do mention what tools and how they have been used in the submission report. Please note that these tools can mislead or provide wrong solutions. Its important to know the concept before using the tools. Tools are at the end-of-the day enablers. Today it will be ChatGPT tomorrow it will be something else but the concepts needs to be clear to leverage the different tools. Bottomline, feel free to use different tools but use them wisely!</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <button class="accordion-header" data-target="deadlines-policy">
+                                    <span class="accordion-icon">⏰</span>
+                                    <span class="accordion-title">Submission Deadlines</span>
+                                    <span class="accordion-arrow">▶</span>
+                                </button>
+                                <div id="deadlines-policy" class="accordion-body">
+                                    <div class="accordion-content">
+                                        <p>Considering this course has more than 100+ enrolled students, there will be NO extensions! for any graded task. It is your responsibility to submit an assignment or a lab activity on a prescribed deadline. Please do not wait until last minute to submit your submission. We will not entertain last minute huddle issues due to moodle. The instructors and TAs shall provide considerable amount of time for all your assignments and lab activities with a grace time for submission. Please ensure that you follow the respective submission guidelines while you submit for assignments and lab activities. If you couldn't submit any graded task due to health issues/attending a game/attending a conference/personal issue - please work with academic office for exemption.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <button class="accordion-header" data-target="grading-policy">
+                                    <span class="accordion-icon">📊</span>
+                                    <span class="accordion-title">Grading Policy</span>
+                                    <span class="accordion-arrow">▶</span>
+                                </button>
+                                <div id="grading-policy" class="accordion-body">
+                                    <div class="accordion-content">
+                                        <p>Once a grade for certain course deliverable (labs, assignments, quiz, exam, etc.) is released, the students may request a re-evaluation (with appropriate reasons) of the grade up to a week after the grade has been posted. After that, the student may not discuss prior grades with the instructor (even if the instructors or TAs are at fault). There will be no makeup activity/lab under any circumstances unless prior permission is granted from Academic Office. Late submissions will not be entertained unless there is a genuine health reason. Appropriate medical documentation will be needed in such cases - please work with academic office for exemption.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <button class="accordion-header" data-target="grading-distribution">
+                                    <span class="accordion-icon">📈</span>
+                                    <span class="accordion-title">Grading Distribution</span>
+                                    <span class="accordion-arrow">▶</span>
+                                </button>
+                                <div id="grading-distribution" class="accordion-body">
+                                    <div class="accordion-content">
+                                        <p>The course instructor reserves the right to make minor modifications to the above distribution based on the progress of the courses. Below is the overall grade distribution.</p>
+                                        <div class="grading-table">
+                                            <div class="table-row header-row">
+                                                <span>Component</span>
+                                                <span>Weightage</span>
+                                            </div>
+                                            <div class="table-row">
+                                                <span>Assignments</span>
+                                                <span>30%</span>
+                                            </div>
+                                            <div class="table-row">
+                                                <span>Lab Activities</span>
+                                                <span>20%</span>
+                                            </div>
+                                            <div class="table-row">
+                                                <span>Mid-term Exam</span>
+                                                <span>20%</span>
+                                            </div>
+                                            <div class="table-row">
+                                                <span>Final Exam</span>
+                                                <span>30%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Lecture Schedule Table Section -->
+        <section id="schedule" class="content-section">
+            <div class="section-container">
+                <div class="glass-card">
+                    <div class="card-header">
+                        <div class="section-icon">📚</div>
+                        <h2 class="section-title">Lecture Schedule & Content</h2>
+                        <a href="#home" class="back-to-top">↑ Top</a>
+                    </div>
+                    <div class="card-body">
+                        <div class="table-wrapper">
+                            <div class="data-table">
+                                <div class="table-header">
+                                    <div class="table-cell">Week</div>
+                                    <div class="table-cell">Date</div>
+                                    <div class="table-cell">Topic</div>
+                                    <div class="table-cell">Materials</div>
+                                    <div class="table-cell">Status</div>
+                                </div>
+                                
+                                <div class="table-row completed">
+                                    <div class="table-cell">1</div>
+                                    <div class="table-cell">Aug 6</div>
+                                    <div class="table-cell">Course Introduction & Overview</div>
+                                    <div class="table-cell">
+                                        <div class="material-links">
+                                            <a href="#" class="material-link slides">Slides</a>
+                                            <a href="#" class="material-link notes">Notes</a>
+                                        </div>
+                                    </div>
+                                    <div class="table-cell">
+                                        <span class="status-badge completed">✓ Completed</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="table-row completed">
+                                    <div class="table-cell">1</div>
+                                    <div class="table-cell">Aug 9</div>
+                                    <div class="table-cell">Software Engineering Fundamentals</div>
+                                    <div class="table-cell">
+                                        <div class="material-links">
+                                            <a href="#" class="material-link slides">Slides</a>
+                                            <a href="#" class="material-link notes">Notes</a>
+                                            <a href="#" class="material-link reading">Reading</a>
+                                        </div>
+                                    </div>
+                                    <div class="table-cell">
+                                        <span class="status-badge completed">✓ Completed</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="table-row current">
+                                    <div class="table-cell">2</div>
+                                    <div class="table-cell">Aug 13</div>
+                                    <div class="table-cell">Version Control Systems - Git</div>
+                                    <div class="table-cell">
+                                        <div class="material-links">
+                                            <a href="#" class="material-link slides">Slides</a>
+                                            <span class="material-link disabled">Notes</span>
+                                        </div>
+                                    </div>
+                                    <div class="table-cell">
+                                        <span class="status-badge current">🔄 Current</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="table-row upcoming">
+                                    <div class="table-cell">2</div>
+                                    <div class="table-cell">Aug 16</div>
+                                    <div class="table-cell">Database Systems Overview</div>
+                                    <div class="table-cell">
+                                        <div class="material-links">
+                                            <span class="material-link disabled">Slides</span>
+                                            <span class="material-link disabled">Notes</span>
+                                        </div>
+                                    </div>
+                                    <div class="table-cell">
+                                        <span class="status-badge upcoming">📅 Upcoming</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Lab Schedule Section -->
+        <section id="lab" class="content-section">
+            <div class="section-container">
+                <div class="glass-card">
+                    <div class="card-header">
+                        <div class="section-icon">💻</div>
+                        <h2 class="section-title">Lab Schedule & Activities</h2>
+                        <a href="#home" class="back-to-top">↑ Top</a>
+                    </div>
+                    <div class="card-body">
+                        <div class="lab-grid">
+                            <div class="lab-card completed">
+                                <div class="lab-header">
+                                    <div class="lab-number">Lab 01</div>
+                                    <div class="lab-status">✓</div>
+                                </div>
+                                <div class="lab-content">
+                                    <h4>Environment Setup</h4>
+                                    <p class="lab-date">Aug 9, 2025</p>
+                                    <div class="lab-materials">
+                                        <a href="#" class="lab-link">Instructions</a>
+                                        <a href="#" class="lab-link">Resources</a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="lab-card completed">
+                                <div class="lab-header">
+                                    <div class="lab-number">Lab 02</div>
+                                    <div class="lab-status">✓</div>
+                                </div>
+                                <div class="lab-content">
+                                    <h4>Git Fundamentals</h4>
+                                    <p class="lab-date">Aug 16, 2025</p>
+                                    <div class="lab-materials">
+                                        <a href="#" class="lab-link">Instructions</a>
+                                        <a href="#" class="lab-link">Submission</a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="lab-card current">
+                                <div class="lab-header">
+                                    <div class="lab-number">Lab 03</div>
+                                    <div class="lab-status">🔄</div>
+                                </div>
+                                <div class="lab-content">
+                                    <h4>Database Design</h4>
+                                    <p class="lab-date">Aug 23, 2025</p>
+                                    <div class="lab-materials">
+                                        <a href="#" class="lab-link">Instructions</a>
+                                        <span class="lab-link disabled">Submission</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="lab-card upcoming">
+                                <div class="lab-header">
+                                    <div class="lab-number">Lab 04</div>
+                                    <div class="lab-status">📅</div>
+                                </div>
+                                <div class="lab-content">
+                                    <h4>Web Development Basics</h4>
+                                    <p class="lab-date">Aug 30, 2025</p>
+                                    <div class="lab-materials">
+                                        <span class="lab-link disabled">Instructions</span>
+                                        <span class="lab-link disabled">Submission</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Exams Section -->
+        <section id="activity" class="content-section">
+            <div class="section-container">
+                <div class="glass-card">
+                    <div class="card-header">
+                        <div class="section-icon">📝</div>
+                        <h2 class="section-title">Exams & Assessments</h2>
+                        <a href="#home" class="back-to-top">↑ Top</a>
+                    </div>
+                    <div class="card-body">
+                        <div class="exam-timeline">
+                            <div class="timeline-item completed">
+                                <div class="timeline-marker completed"></div>
+                                <div class="timeline-content">
+                                    <div class="exam-card">
+                                        <div class="exam-type assignment">📝 Assignment 1</div>
+                                        <h4>Git & Version Control</h4>
+                                        <div class="exam-details">
+                                            <span class="exam-date">Due: Aug 20, 2025</span>
+                                            <span class="exam-points">Points: 100</span>
+                                        </div>
+                                        <div class="exam-status">
+                                            <span class="status-badge completed">✓ Submitted</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="timeline-item current">
+                                <div class="timeline-marker current"></div>
+                                <div class="timeline-content">
+                                    <div class="exam-card">
+                                        <div class="exam-type quiz">🧠 Quiz 1</div>
+                                        <h4>Software Engineering Basics</h4>
+                                        <div class="exam-details">
+                                            <span class="exam-date">Date: Aug 25, 2025</span>
+                                            <span class="exam-points">Points: 50</span>
+                                        </div>
+                                        <div class="exam-status">
+                                            <span class="status-badge current">🔄 Active</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="timeline-item upcoming">
+                                <div class="timeline-marker upcoming"></div>
+                                <div class="timeline-content">
+                                    <div class="exam-card">
+                                        <div class="exam-type exam">🎯 Mid-term Exam</div>
+                                        <h4>Comprehensive Assessment</h4>
+                                        <div class="exam-details">
+                                            <span class="exam-date">Date: Sep 15, 2025</span>
+                                            <span class="exam-points">Points: 200</span>
+                                        </div>
+                                        <div class="exam-status">
+                                            <span class="status-badge upcoming">📅 Upcoming</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Staff Section -->
+        <section id="staff" class="content-section">
+            <div class="section-container">
+                <div class="glass-card">
+                    <div class="card-header">
+                        <div class="section-icon">👥</div>
+                        <h2 class="section-title">Course Staff</h2>
+                        <a href="#home" class="back-to-top">↑ Top</a>
+                    </div>
+                    <div class="card-body">
+                        <div class="staff-section">
+                            <div class="staff-category">
+                                <h3 class="category-title">👨‍🏫 Instructors</h3>
+                                <div class="staff-grid">
+                                    <div class="staff-member instructor">
+                                        <div class="member-avatar">🧑‍💼</div>
+                                        <div class="member-info">
+                                            <h4>Dr. Sai Anirudh Karre</h4>
+                                            <p>Course Instructor</p>
+                                            <a href="mailto:saianirudh.karre@iiit.ac.in" class="contact-link">📧 Contact</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="staff-category">
+                                <h3 class="category-title">👨‍💻 Teaching Assistants</h3>
+                                <div class="staff-grid">
+                                    <div class="staff-member ta">
+                                        <div class="member-avatar">👨‍🎓</div>
+                                        <div class="member-info">
+                                            <h4>TA Name 1</h4>
+                                            <p>Office Hours: Mon 2-4 PM</p>
+                                            <a href="mailto:ta1@iiit.ac.in" class="contact-link">📧 Contact</a>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="staff-member ta">
+                                        <div class="member-avatar">👩‍🎓</div>
+                                        <div class="member-info">
+                                            <h4>TA Name 2</h4>
+                                            <p>Office Hours: Wed 3-5 PM</p>
+                                            <a href="mailto:ta2@iiit.ac.in" class="contact-link">📧 Contact</a>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="staff-member ta">
+                                        <div class="member-avatar">👨‍🎓</div>
+                                        <div class="member-info">
+                                            <h4>TA Name 3</h4>
+                                            <p>Office Hours: Fri 1-3 PM</p>
+                                            <a href="mailto:ta3@iiit.ac.in" class="contact-link">📧 Contact</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="modern-footer">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>🔗 Important Links</h3>
+                    <div class="footer-links">
+                        <a href="https://moodle.iiit.ac.in" target="_blank" class="footer-link">📚 Moodle</a>
+                        <a href="https://github.com" target="_blank" class="footer-link">💻 GitHub</a>
+                        <a href="https://iiit.ac.in" target="_blank" class="footer-link">🏫 IIIT-H</a>
+                        <a href="#home" class="footer-link">🔝 Top</a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>⏰ Current Time</h3>
+                    <div id="currentTime" class="current-time-display">Loading...</div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>📧 Contact</h3>
+                    <p class="footer-text">Course website hosted on GitHub Pages</p>
+                    <p class="footer-text">© 2025 IIIT Hyderabad</p>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+    <script>
+        // Event tracking for analytics
+        function getEventObject(el) {
+            if (el.tagName === "IMG") return "image";
+            if (el.tagName === "A") return "link";
+            if (el.tagName === "BUTTON") return "button";
+            if (el.tagName === "P" || el.tagName === "SPAN" || el.tagName === "H1" || el.tagName === "H2" || el.tagName === "H3") return "text";
+            if (el.tagName === "TABLE" || el.tagName === "TR" || el.tagName === "TD" || el.tagName === "TH") return "table";
+            if (el.tagName === "SELECT") return "dropdown";
+            return el.tagName.toLowerCase();
+        }
+
+        function logEvent(type, target) {
+            const timestamp = new Date().toISOString();
+            const eventObj = getEventObject(target);
+            console.log({
+                timestamp,
+                type_of_event: type,
+                event_object: eventObj
+            });
+        }
+
+        window.addEventListener("load", () => {
+            logEvent("view", document.body);
+        });
+
+        document.addEventListener("click", (e) => {
+            logEvent("click", e.target);
+        });
+    </script>
+</body>
+</html>
